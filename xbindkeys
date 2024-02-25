@@ -1,0 +1,165 @@
+# For the benefit of emacs users: -*- shell-script -*-
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 1.8.7
+#
+# If you edit this file, do not forget to uncomment any lines
+# that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+#
+# The format of a command line is:
+#    "command to start"
+#       associated key
+#
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h
+# The XK_ is not needed.
+#
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+#
+
+# The release modifier is not a standard X modifier, but you can
+# use it if you want to catch release events instead of press events
+
+# By defaults, xbindkeys does not pay attention with the modifiers
+# NumLock, CapsLock and ScrollLock.
+# Uncomment the lines above if you want to pay attention to them.
+
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+
+#####
+'#' alt + key
+#####
+"xvkbd -xsendevent -text '\[Left]'"
+m:0x18 + c:43
+alt + h
+
+"xvkbd -xsendevent -text '\[Down]'"
+m:0x18 + c:44
+alt + j
+
+"xvkbd -xsendevent -text '\[Right]'"
+m:0x18 + c:46
+alt + l
+
+"xvkbd -xsendevent -text '\[Up]'"
+m:0x18 + c:45
+alt + k
+
+#####
+'#' ctrl + alt + key
+#####
+
+"xvkbd -xsendevent -text '\C\[Left]'"
+m:0x14 + m:0x18 + c:43
+ctrl + alt + h
+
+"xvkbd -xsendevent -text '\C\[Down]'"
+m:0x14 + m:0x18 + c:44
+ctrl + alt + j
+
+"xvkbd -xsendevent -text '\C\[Right]'"
+m:0x14 + m:0x18 + c:46
+ctrl + alt + l
+
+"xvkbd -xsendevent -text '\C\[Up]'"
+m:0x14 + m:0x18 + c:45
+ctrl + alt + k
+
+#####
+'#' ctrl + alt + shift + key
+#####
+
+"xvkbd -xsendevent -text '\C\S\[Left]'"
+m:0x14 + m:0x11 + m:0x18 + c:43
+ctrl + alt + shift + h
+
+"xvkbd -xsendevent -text '\C\S\[Down]'"
+m:0x14 + m:0x11 + m:0x18 + c:44
+ctrl + alt + shift + j
+
+"xvkbd -xsendevent -text '\C\S\[Right]'"
+m:0x14 + m:0x11 + m:0x18 + c:46
+ctrl + alt + shift + l
+
+"xvkbd -xsendevent -text '\C\S\[Up]'"
+m:0x14 + m:0x11 + m:0x18 + c:45
+ctrl + alt + shift + k
+
+#####
+'#' ctrl + alt + shift + key
+#####
+
+
+"xvkbd -xsendevent -text '\C\S\[Left]'"
+m:0x14 + m:0x11 + m:0x18 + c:43
+ctrl + alt + shift + h
+
+"xvkbd -xsendevent -text '\C\S\[Down]'"
+m:0x14 + m:0x11 + m:0x18 + c:44
+ctrl + alt + shift + j
+
+"xvkbd -xsendevent -text '\C\S\[Right]'"
+m:0x14 + m:0x11 + m:0x18 + c:46
+ctrl + alt + shift + l
+
+"xvkbd -xsendevent -text '\C\S\[Up]'"
+m:0x14 + m:0x11 + m:0x18 + c:45
+ctrl + alt + shift + k
+
+
+#####
+'#' extra utilities
+#####
+
+"xvkbd -xsendevent -text '\[Home]'"
+m:0x18 + c:30
+alt + u
+
+"xvkbd -xsendevent -text '\[End]'"
+m:0x18 + c:32
+alt + o
+
+"xvkbd -xsendevent -text '\S\[Home]'"
+m:0x18 + m:0x11 + c:30
+alt + shift + u
+
+"xvkbd -xsendevent -text '\S\[End]'"
+m:0x18 + m:0x11 + c:32
+alt + shift + o
+
+
+#####
+'#' alt + shift + key
+#####
+
+"xvkbd -xsendevent -text '\S\[Left]'"
+m:0x18 + m:0x11 + c:43
+alt + shift + h
+
+"xvkbd -xsendevent -text '\S\[Down]'"
+m:0x18 + m:0x11 + c:44
+alt + shift + j
+
+"xvkbd -xsendevent -text '\S\[Right]'"
+m:0x18 + m:0x11 + c:46
+alt + shift + l
+
+"xvkbd -xsendevent -text '\S\[Up]'"
+m:0x18 + m:0x11 + c:45
+alt + shift + k
+
+##################################
+# End of xbindkeys configuration #
+##################################
