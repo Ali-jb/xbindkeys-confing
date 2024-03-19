@@ -81,26 +81,6 @@ ctrl + alt + k
 '#' ctrl + alt + shift + key
 #####
 
-"xvkbd -xsendevent -text '\C\S\[Left]'"
-m:0x14 + m:0x11 + m:0x18 + c:43
-ctrl + alt + shift + h
-
-"xvkbd -xsendevent -text '\C\S\[Down]'"
-m:0x14 + m:0x11 + m:0x18 + c:44
-ctrl + alt + shift + j
-
-"xvkbd -xsendevent -text '\C\S\[Right]'"
-m:0x14 + m:0x11 + m:0x18 + c:46
-ctrl + alt + shift + l
-
-"xvkbd -xsendevent -text '\C\S\[Up]'"
-m:0x14 + m:0x11 + m:0x18 + c:45
-ctrl + alt + shift + k
-
-#####
-'#' ctrl + alt + shift + key
-#####
-
 
 "xvkbd -xsendevent -text '\C\S\[Left]'"
 m:0x14 + m:0x11 + m:0x18 + c:43
